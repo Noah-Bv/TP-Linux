@@ -1,0 +1,31 @@
+yes
+yes
+drop
+internal (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: bond0 bond0.42
+  sources: 
+  services: 
+  ports: 10051/tcp 2242/tcp 8080/tcp
+  protocols: 
+  forward: yes
+  masquerade: no
+  forward-ports: 
+  source-ports: 
+  icmp-blocks: 
+  rich rules: 
+	rule source ipset="helios-blacklist" drop
+--- 8080 dans les autres zones ? (seule 'internal' doit apparaitre)
+1:block
+16:dmz
+31:drop (active)
+46:external
+61:home
+76:internal (active)
+82:  ports: 10051/tcp 2242/tcp 8080/tcp
+92:nm-shared
+108:public
+123:trusted
+138:work (active)
+		tcp dport 8080 accept

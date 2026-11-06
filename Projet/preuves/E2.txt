@@ -1,0 +1,18 @@
+drwxrws---+ 2 root suivi 24  5 nov.  12:18 /srv/helios/suivi/www
+-rw-rw----+ 1 lea suivi 63  5 nov.  12:18 /srv/helios/suivi/www/index.html
+# file: /srv/helios/suivi/www/index.html
+# owner: lea
+# group: suivi
+user::rw-
+user:helios-suivi:r--
+group::rwx	#effective:rw-
+mask::rw-
+other::---
+
+Portail de suivi des tournees Helios - exploitante : Lea Fabre
+cat: /srv/helios/suivi/www/index.html: Permission non accordée
+rc nadia=1
+-rw-rw----+ 1 lea suivi 0  5 nov.  12:19 /srv/helios/suivi/www/test-000
+-rw-rw----+ 1 lea suivi 0  5 nov.  12:19 /srv/helios/suivi/www/test-022
+-rw-rw----+ 1 lea suivi 0  5 nov.  12:19 /srv/helios/suivi/www/test-077
+rm : supprimer '/srv/helios/suivi/www/test-000' du type fichier vide ? rm : supprimer '/srv/helios/suivi/www/test-022' du type fichier vide ? rm : supprimer '/srv/helios/suivi/www/test-077' du type fichier vide ? 

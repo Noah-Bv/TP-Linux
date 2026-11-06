@@ -1,0 +1,14 @@
+Entrées Defaults correspondant pour lea sur localhost :
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin
+
+L'utilisateur lea peut utiliser les commandes suivantes sur localhost :
+    (root) /usr/bin/systemctl restart helios-suivi.service, /usr/bin/systemctl status helios-suivi.service --no-pager, /usr/bin/systemctl start helios-suivi-publish.service, /usr/bin/journalctl -u helios-suivi.service -n 100 --no-pager, /usr/bin/journalctl -u helios-suivi-publish.service -n 100 --no-pager
+--- restart sshd (doit etre refuse)
+--- restart du portail (autorise)
+/usr/bin/systemctl restart helios-suivi.service
+--- journalctl avec option en plus (refuse)
+/etc/sudoers : analyse réussie
+/etc/sudoers.d/90-helios-ops : analyse réussie
+/etc/sudoers.d/92-helios-suivi : analyse réussie
+/etc/sudoers.d/99-mauvais-exemple : analyse réussie
+-r--r-----. 1 root root 455  5 nov.  15:08 /etc/sudoers.d/92-helios-suivi

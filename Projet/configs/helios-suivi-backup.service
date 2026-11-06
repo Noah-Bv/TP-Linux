@@ -1,0 +1,8 @@
+[Unit]
+Description=Sauvegarde du portail de suivi Helios
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/helios-suivi-backup.sh
+Nice=10
+IOSchedulingClass=idle

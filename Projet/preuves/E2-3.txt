@@ -1,0 +1,22 @@
+# file: /srv/helios/suivi/www
+# owner: root
+# group: suivi
+# flags: -s-
+user::rwx
+user:helios-suivi:rwx
+user:zabbix:--x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:helios-suivi:r--
+default:group::rwx
+default:mask::rwx
+default:other::---
+
+/srv/helios/suivi/www/etat.json 172 octets 2026-11-05 12:58:04.208117005 +0100
+stat rc=0
+ls: impossible d'ouvrir le répertoire '/srv/helios/suivi/www': Permission non accordée
+ls rc=2
+cat: /srv/helios/suivi/www/etat.json: Permission non accordée
+cat rc=1

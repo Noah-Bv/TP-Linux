@@ -1,0 +1,16 @@
+=== avant
+16:03:54
+MemoryCurrent=10555392
+CPUUsageNSec=300744000
+nr_throttled 0
+throttled_usec 0
+
+real	0m12,087s
+user	0m7,211s
+sys	0m1,550s
+=== apres
+16:04:24
+MemoryCurrent=10559488
+CPUUsageNSec=1117134000
+nr_throttled 0
+throttled_usec 0

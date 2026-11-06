@@ -1,0 +1,19 @@
+uid=5104(lea) gid=5003(suivi) groupes=5003(suivi)
+lea:x:5104:5003:Lea Fabre - responsable suivi des tournees:/home/lea:/bin/bash
+helios-suivi:x:982:979:Portail de suivi Helios:/srv/helios/suivi:/sbin/nologin
+Last password change					: nov. 05, 2026
+Password expires					: févr. 03, 2027
+Password inactive					: févr. 10, 2027
+Account expires						: never
+Minimum number of days between password change		: 1
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 14
+appartenances lea : suivi
+0
+982
+audit-ext
+julien
+lea
+nadia
+noah
+tarek

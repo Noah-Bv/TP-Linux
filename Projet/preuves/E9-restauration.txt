@@ -1,0 +1,27 @@
+=== (a) extraction dans un repertoire de test
+/srv/helios/archives/suivi/suivi-20261105-155927.tar.gz
+ACL de www identiques a la production
+# file: /root/restore-test.2t5fBU/srv/helios/suivi/www/index.html
+# owner: lea
+# group: suivi
+user::rw-
+user:helios-suivi:r--
+group::rwx	#effective:rw-
+mask::rw-
+other::---
+
+=== (b) incident simule : suppression de index.html
+rm : supprimer '/srv/helios/suivi/www/index.html' du type fichier ? total 8
+-rw-r-----+ 1 helios-suivi suivi 172  5 nov.  16:00 etat.json
+-rw-rw----+ 1 lea          suivi  63  5 nov.  12:18 index.html
+Portail de suivi des tournees Helios - exploitante : Lea Fabre
+=== restauration de ce seul fichier
+total 8
+-rw-r-----+ 1 helios-suivi suivi 172  5 nov.  16:00 etat.json
+-rw-rw----+ 1 lea          suivi  63  5 nov.  12:18 index.html
+1c1
+< # file: /srv/helios/suivi/www/index.html
+---
+> # file: /root/restore-test.2t5fBU/srv/helios/suivi/www/index.html
+Portail de suivi des tournees Helios - exploitante : Lea Fabre
+duree totale : 3 s

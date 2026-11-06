@@ -1,0 +1,14 @@
+active
+active
+enabled
+enabled
+1
+200
+6
+Linux 5.14.0-687.61.1.el9_8.x86_64 (localhost.localdomain) 	05/11/2026 	_x86_64_	(1 CPU)
+
+13:00:10        CPU     %user     %nice   %system   %iowait    %steal     %idle
+13:00:11        all      0,00      1,05      4,21      0,00      0,00     94,74
+13:00:12        all      0,00      0,00      2,11      0,00      0,00     97,89
+13:00:13        all      1,02      0,00      2,04      0,00      0,00     96,94
+Moyenne :     all      0,35      0,35      2,78      0,00      0,00     96,53

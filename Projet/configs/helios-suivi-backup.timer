@@ -1,0 +1,11 @@
+[Unit]
+Description=Sauvegarde quotidienne du portail de suivi Helios
+
+[Timer]
+OnCalendar=*-*-* 03:15:00
+Persistent=yes
+AccuracySec=1min
+Unit=helios-suivi-backup.service
+
+[Install]
+WantedBy=timers.target

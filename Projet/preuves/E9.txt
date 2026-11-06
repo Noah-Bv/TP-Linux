@@ -1,0 +1,33 @@
+--- creation par l'unit
+nov. 05 15:59:08 localhost.localdomain helios-suivi-backup[24656]: demarrage
+nov. 05 15:59:08 localhost.localdomain helios-suivi-backup[24676]: archive /srv/helios/archives/suivi/suivi-20261105-155908.tar.gz creee (1 presentes, 7 conservees)
+nov. 05 15:59:08 localhost.localdomain helios-suivi-backup[24677]: fin d execution rc=0
+total 8
+-rw-r-----. 1 helios helios 4074  5 nov.  15:59 suivi-20261105-155908.tar.gz
+-rw-r-----. 1 helios helios   95  5 nov.  15:59 suivi-20261105-155908.tar.gz.sha256
+suivi-20261105-155908.tar.gz: Réussi
+--- contenu
+srv/helios/suivi/
+srv/helios/suivi/www/
+srv/helios/suivi/www/index.html
+srv/helios/suivi/www/etat.json
+etc/systemd/system/helios-suivi.service
+etc/systemd/system/helios-suivi-publish.service
+etc/systemd/system/helios-suivi-publish.timer
+etc/systemd/system/helios-suivi-backup.service
+etc/systemd/system/helios-suivi-backup.timer
+etc/sudoers.d/92-helios-suivi
+etc/zabbix/zabbix_agent2.d/helios-suivi.conf
+usr/local/sbin/helios-suivi-publish.sh
+usr/local/sbin/helios-suivi-backup.sh
+--- code 2
+rc attendu 2 -> 2
+--- code 3
+rc attendu 3 -> 3
+--- rotation : 9 archives de plus, il doit en rester 7
+7
+NEXT                        LEFT     LAST PASSED UNIT                      ACTIVATES
+Fri 2026-11-06 03:15:00 CET 11h left -    -      helios-suivi-backup.timer helios-suivi-backup.service
+
+1 timers listed.
+Pass --all to see loaded but inactive timers, too.

@@ -1,0 +1,17 @@
+active
+active
+active
+active
+active
+active
+active
+active
+/etat.json -> 200
+yes
+200
+17
+port 2242
+permitrootlogin no
+passwordauthentication no
+allowgroups ssh-admins
+Enforcing

@@ -1,0 +1,30 @@
+--- code 0
+rc=0
+{
+    "genere": "2026-11-05T12:26:14+01:00",
+    "hote": "localhost.localdomain",
+    "derniere_mesure": "2026-11-05T12:26:12+01:00",
+    "charge_1min": 0.15,
+    "mem_dispo_ko": 868448,
+    "mesures": 1449
+}
+-rw-r-----+ 1 helios-suivi suivi 172  5 nov.  12:26 /srv/helios/suivi/www/etat.json
+nov. 05 12:26:14 localhost.localdomain helios-suivi-publish[9913]: demarrage
+nov. 05 12:26:14 localhost.localdomain helios-suivi-publish[9927]: publie /srv/helios/suivi/www/etat.json (mesures=1449, derniere=2026-11-05T12:26:12+01:00)
+nov. 05 12:26:15 localhost.localdomain helios-suivi-publish[9928]: fin d execution rc=0
+--- code 2 (verrou deja pris)
+rc attendu 2 -> 2
+--- code 3 (www non inscriptible pour ce compte)
+rc attendu 3 -> 3
+--- code 1 (ligne invalide, fichier de test)
+rc attendu 1 -> 1
+nov. 05 12:26:14 localhost.localdomain helios-suivi-publish[9913]: demarrage
+nov. 05 12:26:14 localhost.localdomain helios-suivi-publish[9927]: publie /srv/helios/suivi/www/etat.json (mesures=1449, derniere=2026-11-05T12:26:12+01:00)
+nov. 05 12:26:15 localhost.localdomain helios-suivi-publish[9928]: fin d execution rc=0
+nov. 05 12:26:16 localhost.localdomain helios-suivi-publish[9938]: une autre instance tourne deja
+nov. 05 12:26:16 localhost.localdomain helios-suivi-publish[9939]: fin d execution rc=2
+nov. 05 12:26:30 localhost.localdomain helios-suivi-publish[9955]: repertoire non inscriptible : /srv/helios/suivi/www
+nov. 05 12:26:30 localhost.localdomain helios-suivi-publish[9956]: fin d execution rc=3
+nov. 05 12:26:30 localhost.localdomain helios-suivi-publish[9959]: demarrage
+nov. 05 12:26:30 localhost.localdomain helios-suivi-publish[9962]: ligne de telemetrie invalide : garbage
+nov. 05 12:26:30 localhost.localdomain helios-suivi-publish[9963]: fin d execution rc=1

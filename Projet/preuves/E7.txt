@@ -1,0 +1,16 @@
+port 2242
+permitrootlogin no
+passwordauthentication no
+allowgroups ssh-admins
+active
+/var/log/journal
+Archived and active journals take up 40.0M in the file system.
+/etc/systemd/journald.conf.d/50-helios.conf:Storage=persistent
+port 2242
+permitrootlogin no
+passwordauthentication no
+allowgroups ssh-admins
+active
+/var/log/journal
+Archived and active journals take up 40.0M in the file system.
+/etc/systemd/journald.conf.d/50-helios.conf:Storage=persistent

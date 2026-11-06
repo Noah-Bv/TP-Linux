@@ -1,0 +1,4 @@
+stat: impossible d'exécuter statx '/srv/helios/suivi/www/etat.json': Permission non accordée
+rc=1
+/usr/bin/stat: impossible d'exécuter statx '/srv/helios/suivi/www/etat.json': Permission non accordée
+sh: ligne 1: 1793879929 -   : erreur de syntaxe : opérande attendu (le symbole erroné est « -   »)

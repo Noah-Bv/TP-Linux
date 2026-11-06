@@ -1,0 +1,2 @@
+{"genere":"2026-11-05T12:56:04+01:00","hote":"localhost.localdomain","derniere_mesure":"2026-11-05T12:56:00+01:00","charge_1min":0.00,"mem_dispo_ko":801092,"mesures":1806}
+{"genere":"2026-11-05T12:58:04+01:00","hote":"localhost.localdomain","derniere_mesure":"2026-11-05T12:58:00+01:00","charge_1min":0.00,"mem_dispo_ko":803664,"mesures":1830}

@@ -1,0 +1,146 @@
+active
+enabled
+helios-+   11192 /usr/bin/python3 -m http.server 8080 --bind 0.0.0.0 --directory /srv/helios/suivi/www
+/ -> 200
+/etat.json -> 200
+{"genere":"2026-11-05T12:46:29+01:00","hote":"localhost.localdomain","derniere_mesure":"2026-11-05T12:46:29+01:00","charge_1min":0.00,"mem_dispo_ko":834052,"mesures":1692}
+CPUQuotaPerSecUSec=500ms
+MemoryMax=134217728
+helios.target
+● ├─helios-collect.service
+● ├─helios-suivi.service
+● └─multi-user.target
+●   ├─atd.service
+●   ├─auditd.service
+●   ├─avahi-daemon.service
+●   ├─chronyd.service
+●   ├─crond.service
+●   ├─cups.path
+●   ├─cups.service
+●   ├─firewalld.service
+●   ├─helios-collect.service
+○   ├─irqbalance.service
+●   ├─kdump.service
+●   ├─libstoragemgmt.service
+●   ├─mcelog.service
+○   ├─mdmonitor.service
+●   ├─ModemManager.service
+●   ├─NetworkManager.service
+○   ├─ostree-readonly-sysroot-migration.service
+●   ├─plymouth-quit-wait.service
+○   ├─plymouth-quit.service
+●   ├─rsyslog.service
+○   ├─smartd.service
+●   ├─sshd.service
+○   ├─sssd.service
+●   ├─sysstat.service
+●   ├─systemd-ask-password-wall.path
+●   ├─systemd-logind.service
+○   ├─systemd-update-utmp-runlevel.service
+●   ├─systemd-user-sessions.service
+●   ├─tuned.service
+●   ├─vboxadd-service.service
+●   ├─vboxadd.service
+○   ├─vmtoolsd.service
+●   ├─zabbix-agent2.service
+●   ├─basic.target
+●   │ ├─-.mount
+○   │ ├─low-memory-monitor.service
+○   │ ├─microcode.service
+●   │ ├─paths.target
+●   │ ├─slices.target
+●   │ │ ├─-.slice
+●   │ │ └─system.slice
+●   │ ├─sockets.target
+●   │ │ ├─avahi-daemon.socket
+●   │ │ ├─cups.socket
+●   │ │ ├─dbus.socket
+●   │ │ ├─dm-event.socket
+●   │ │ ├─iscsid.socket
+●   │ │ ├─iscsiuio.socket
+○   │ │ ├─multipathd.socket
+●   │ │ ├─sssd-kcm.socket
+●   │ │ ├─systemd-coredump.socket
+●   │ │ ├─systemd-initctl.socket
+●   │ │ ├─systemd-journald-dev-log.socket
+●   │ │ ├─systemd-journald.socket
+●   │ │ ├─systemd-udevd-control.socket
+●   │ │ └─systemd-udevd-kernel.socket
+●   │ ├─sysinit.target
+●   │ │ ├─dev-hugepages.mount
+●   │ │ ├─dev-mqueue.mount
+●   │ │ ├─dracut-shutdown.service
+○   │ │ ├─iscsi-onboot.service
+○   │ │ ├─iscsi-starter.service
+●   │ │ ├─kmod-static-nodes.service
+○   │ │ ├─ldconfig.service
+●   │ │ ├─lvm2-lvmpolld.socket
+●   │ │ ├─lvm2-monitor.service
+○   │ │ ├─multipathd.service
+●   │ │ ├─nis-domainname.service
+●   │ │ ├─plymouth-read-write.service
+●   │ │ ├─plymouth-start.service
+●   │ │ ├─proc-sys-fs-binfmt_misc.automount
+○   │ │ ├─selinux-autorelabel-mark.service
+●   │ │ ├─sys-fs-fuse-connections.mount
+●   │ │ ├─sys-kernel-config.mount
+●   │ │ ├─sys-kernel-debug.mount
+●   │ │ ├─sys-kernel-tracing.mount
+○   │ │ ├─systemd-ask-password-console.path
+○   │ │ ├─systemd-binfmt.service
+○   │ │ ├─systemd-boot-random-seed.service
+●   │ │ ├─systemd-boot-update.service
+○   │ │ ├─systemd-firstboot.service
+○   │ │ ├─systemd-hwdb-update.service
+○   │ │ ├─systemd-journal-catalog-update.service
+●   │ │ ├─systemd-journal-flush.service
+●   │ │ ├─systemd-journald.service
+○   │ │ ├─systemd-machine-id-commit.service
+●   │ │ ├─systemd-modules-load.service
+●   │ │ ├─systemd-network-generator.service
+○   │ │ ├─systemd-pcrmachine.service
+○   │ │ ├─systemd-pcrphase-sysinit.service
+○   │ │ ├─systemd-pcrphase.service
+○   │ │ ├─systemd-pstore.service
+●   │ │ ├─systemd-random-seed.service
+○   │ │ ├─systemd-repart.service
+●   │ │ ├─systemd-sysctl.service
+○   │ │ ├─systemd-sysusers.service
+●   │ │ ├─systemd-tmpfiles-setup-dev.service
+●   │ │ ├─systemd-tmpfiles-setup.service
+●   │ │ ├─systemd-udev-trigger.service
+●   │ │ ├─systemd-udevd.service
+○   │ │ ├─systemd-update-done.service
+●   │ │ ├─systemd-update-utmp.service
+●   │ │ ├─cryptsetup.target
+●   │ │ ├─integritysetup.target
+●   │ │ ├─local-fs.target
+●   │ │ │ ├─-.mount
+●   │ │ │ ├─boot.mount
+○   │ │ │ ├─ostree-remount.service
+●   │ │ │ └─systemd-remount-fs.service
+●   │ │ ├─swap.target
+●   │ │ │ └─dev-mapper-rl\x2dswap.swap
+●   │ │ └─veritysetup.target
+●   │ └─timers.target
+●   │   ├─dnf-makecache.timer
+●   │   ├─helios-archive.timer
+●   │   ├─helios-suivi-publish.timer
+●   │   ├─helios-watch-auth.timer
+●   │   ├─logrotate.timer
+●   │   ├─mlocate-updatedb.timer
+●   │   ├─raid-check.timer
+●   │   └─systemd-tmpfiles-clean.timer
+●   ├─getty.target
+○   │ └─getty@tty1.service
+    │ └─...
+●   └─remote-fs.target
+NEXT                        LEFT         LAST                        PASSED  UNIT                       ACTIVATES
+Thu 2026-11-05 12:48:00 CET 1min 8s left Thu 2026-11-05 12:46:29 CET 22s ago helios-suivi-publish.timer helios-suivi-publish.service
+
+1 timers listed.
+Pass --all to see loaded but inactive timers, too.
+✓ RestrictSUIDSGID=                                           SUID/SGID file creation by service is restricted                               
+✗ UMask=                                                      Files created by service are world-readable by default                              0.1
+
+→ Overall exposure level for helios-suivi.service: 1.3 OK 🙂

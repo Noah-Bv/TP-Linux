@@ -1,0 +1,6 @@
+Cmnd_Alias SUIVI_SVC = /usr/bin/systemctl restart helios-suivi.service, \
+                       /usr/bin/systemctl status helios-suivi.service --no-pager, \
+                       /usr/bin/systemctl start helios-suivi-publish.service
+Cmnd_Alias SUIVI_LOG = /usr/bin/journalctl -u helios-suivi.service -n 100 --no-pager, \
+                       /usr/bin/journalctl -u helios-suivi-publish.service -n 100 --no-pager
+%suivi ALL=(root) SUIVI_SVC, SUIVI_LOG

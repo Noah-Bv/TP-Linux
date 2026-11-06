@@ -1,0 +1,4 @@
+nov. 05 15:48:18 localhost.localdomain sshd-session[23687]: User lea from 10.42.0.11 not allowed because none of user's groups are listed in AllowGroups
+nov. 05 15:48:18 localhost.localdomain sshd-session[23687]: Connection closed by invalid user lea 10.42.0.11 port 57100 [preauth]
+nov. 05 15:48:18 localhost.localdomain sshd-session[23687]: User lea from 10.42.0.11 not allowed because none of user's groups are listed in AllowGroups
+nov. 05 15:48:18 localhost.localdomain sshd-session[23687]: Connection closed by invalid user lea 10.42.0.11 port 57100 [preauth]
